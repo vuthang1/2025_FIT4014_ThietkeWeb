@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="vi">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <title>Basic Info Form (HTML only)</title>
+
+</head>
+
+<body>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+  <fieldset>
+
+    <legend>Basic Info</legend>
+
+    <table cellpadding="4" cellspacing="0">
+
+      <tr>
+
+        <td><label for="empid">Employee ID</label></td>
+
+        <td><input id="empid" name="employee_id" type="text" value="9" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="lastname">Last Name</label></td>
+
+        <td><input id="lastname" name="last_name" type="text" value="Dodsworth" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="firstname">First Name</label></td>
+
+        <td><input id="firstname" name="first_name" type="text" value="Anne" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td>Gender</td>
+
+        <td>
+
+          <label><input type="radio" name="gender" value="male" /> Male</label><br/>
+
+          <label><input type="radio" name="gender" value="female" /> Female</label><br/>
+
+          <label><input type="radio" name="gender" value="xxx" /> XXX</label><br/>
+
+          <label><input type="radio" name="gender" value="zzz" checked /> ZZZ</label>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="title">Title</label></td>
+
+        <td><input id="title" name="title" type="text" value="Sales Representative" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="suffix">Suffix</label></td>
+
+        <td><input id="suffix" name="suffix" type="text" value="Ms." /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="birthdate">BirthDate</label></td>
+
+        <td><input id="birthdate" name="birthdate" type="date" value="1969-07-02" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="hiredate">HireDate</label></td>
+
+        <td><input id="hiredate" name="hiredate" type="date" value="1994-11-15" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="ssn">SSN # (if applicable)</label></td>
+
+        <td><input id="ssn" name="ssn" type="text" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="reports">Reports To</label></td>
+
+        <td>
+
+          <select id="reports" name="reports_to">
+
+            <option>Buchanan</option>
+
+            <option>King</option>
+
+            <option>Smith</option>
+
+          </select>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+  </fieldset>
+
+  <fieldset>
+
+    <legend>Contact Info</legend>
+
+    <table cellpadding="4" cellspacing="0">
+
+      <tr>
+
+        <td><label for="email">Email</label></td>
+
+        <td><input id="email" name="email" type="email" placeholder="name@example.com" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="address">Address</label></td>
+
+        <td><input id="address" name="address" type="text" value="7 Houndstooth Rd." /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="city">City</label></td>
+
+        <td><input id="city" name="city" type="text" value="London" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="region">Region</label></td>
+
+        <td><input id="region" name="region" type="text" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="postal">Postal Code</label></td>
+
+        <td><input id="postal" name="postal_code" type="text" value="WG2 7LT" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="country">Country</label></td>
+
+        <td>
+
+          <select id="country" name="country">
+
+            <option>United Kingdom</option>
+
+            <option>Russian Federation</option>
+
+            <option selected>London (example)</option>
+
+          </select>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="phone">US Home Phone</label></td>
+
+        <td><input id="phone" name="phone" type="tel" value="(234)234-2342" /></td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="photo">Photo</label></td>
+
+        <td><input id="photo" name="photo" type="file" accept="image/*" /></td>
+
+      </tr>
+
+    </table>
+
+  </fieldset>
+
+
+
+  <fieldset>
+
+    <legend>Optional Info</legend>
+
+    <table cellpadding="4" cellspacing="0">
+
+      <tr>
+
+        <td valign="top"><label for="notes">Notes</label></td>
+
+        <td>
+
+          <textarea id="notes" name="notes" rows="6" cols="50">
+
+Anne has a BA degree English from St. Lawrence Colloge.
+She is fluent in French and German.ZZZ
+
+          </textarea>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>Preferred Shift</td>
+
+        <td>
+
+          <label><input type="checkbox" name="shift_regular" /> Regular</label><br/>
+
+          <label><input type="checkbox" name="shift_gravy" checked /> Gravy Yard</label>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td><label for="active">Active?</label></td>
+
+        <td><input id="active" name="active" type="checkbox" checked /></td>
+
+      </tr>
+
+      <tr>
+
+        <td>Are you human?</td>
+
+        <td>
+          <div>T I D A W O</div>
+
+          <input type="text" name="captcha" placeholder="Enter code shown" />
+
+          <div><small><a href="#">Click to change</a></small></div>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+  </fieldset>
+  <p>
+    <button type="submit">Submit</button>
+    <button type="button" onclick="history.back();">Cancel</button>
+  </p>
+  <p><small>* required</small></p>
+</form>
+</body>
+</html>
